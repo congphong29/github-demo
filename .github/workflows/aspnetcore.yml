@@ -17,7 +17,7 @@ jobs:
       with:
         dotnet-version: 2.2.108
     - name: Build with dotnet
-      run: 
+      run: |
         cd src/DemoApp/
         dotnet build --configuration Release
 
