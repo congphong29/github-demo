@@ -1,0 +1,19 @@
+{
+  "FilePath": "d:\\demo\\demo2\\git-actions\\src\\DemoApp\\DemoApp.csproj",
+  "Configuration": {
+    "ConfigurationName": "MVC-2.1",
+    "LanguageVersion": "2.1",
+    "Extensions": [
+      {
+        "ExtensionName": "MVC-2.1"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 800
+  },
+  "RootNamespace": "DemoApp",
+  "Documents": [],
+  "SerializationFormat": "0.2"
+}
