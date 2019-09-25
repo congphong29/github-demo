@@ -21,6 +21,16 @@ jobs:
       run: |
         cd src/DemoApp/
         dotnet build --configuration Release
+    - name: build image
+      run: |
+        cd src/DemoApp
+        ls -l
+        echo 'Docker login'
+        docker login -u 1076 -p Phong.docker
+        echo 'Running build ... '
+        docker build -t aspnetapp .
+        echo 'Push image'
+        docker push 1076/aspnetapp:v1
 
   test:
 
