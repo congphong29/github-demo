@@ -30,7 +30,7 @@ jobs:
         echo 'Running build ... '
         docker build -t aspnetapp .
         echo 'Push image'
-        docker push 1076/aspnetapp:v1
+        docker push 1076/aspnetapp:latest
 
   test:
 
