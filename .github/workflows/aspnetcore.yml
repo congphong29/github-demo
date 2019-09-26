@@ -28,7 +28,7 @@ jobs:
         echo 'Docker login'
         docker login -u 1076 -p Phong.docker
         echo 'Running build ... '
-        docker build -t aspnetapp .
+        docker build -t 1076/aspnetapp:latest .
         echo 'Push image'
         docker push 1076/aspnetapp:latest
 
