@@ -30,9 +30,9 @@ jobs:
         echo 'Docker login'
         docker login -u $DOCKER -p $DOCKER
         echo 'Running build ... '
-        docker build -t 1076/aspnetapp:latest .
+        docker build -t wind97/aspnetapp:latest .
         echo 'Push image'
-        docker push 1076/aspnetapp:latest
+        docker push wind97/aspnetapp:latest
 
   test:
 
