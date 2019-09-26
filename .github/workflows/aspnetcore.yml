@@ -22,18 +22,16 @@ jobs:
         cd src/DemoApp/
         dotnet build --configuration Release
     - name: build image
-      env:
-        DOCKER_HUB: ${{ secrets.Docker }}
       run: |
         cd src/DemoApp
         ls -l
         echo 'Docker login'
         docker login -u 1076 --password-stdin < password.txt
-        echo 'Running build ... '
+        echo 'Running image'
         docker build -t 1076/aspnetapp:latest .
-        echo 'Push image'
+        echo 'Pushing image'
         docker push 1076/aspnetapp:latest
-
+        
   test:
     runs-on: ubuntu-latest
     
