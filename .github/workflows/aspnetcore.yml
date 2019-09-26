@@ -27,7 +27,7 @@ jobs:
         cd src/DemoApp
         ls -l
         echo 'Docker login'
-        docker login -u wind87 -p Phong.docker
+        docker login -u wind97 -p Phong.docker
         echo 'Running build ... '
         docker build -t wind97/aspnetapp:latest .
         echo 'Push image'
