@@ -28,7 +28,7 @@ jobs:
         cd src/DemoApp
         ls -l
         echo 'Docker login'
-        docker login -u 1076 --password-stdin < ~src/DemoApp/my_password.txt
+        docker login -u 1076 --password-stdin < ~/password
         echo 'Running build ... '
         docker build -t wind97/aspnetapp:latest .
         echo 'Push image'
