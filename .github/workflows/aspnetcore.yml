@@ -22,13 +22,12 @@ jobs:
         cd src/DemoApp/
         dotnet build --configuration Release
     - name: build image
-      env:
-        DOCKER: ${{ secrets.DOCKER_Public }}
+
       run: |
         cd src/DemoApp
         ls -l
         echo 'Docker login'
-        docker login -u $DOCKER -p $DOCKER
+        docker login -u wind87 -p Phong.docker
         echo 'Running build ... '
         docker build -t wind97/aspnetapp:latest .
         echo 'Push image'
