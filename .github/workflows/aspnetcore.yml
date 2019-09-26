@@ -30,9 +30,9 @@ jobs:
         echo 'Docker login'
         docker login -u 1076 --password-stdin < password.txt
         echo 'Running build ... '
-        docker build -t wind97/aspnetapp:latest .
+        docker build -t 1076/aspnetapp:latest .
         echo 'Push image'
-        docker push wind97/aspnetapp:latest
+        docker push 1076/aspnetapp:latest
 
   test:
     runs-on: ubuntu-latest
